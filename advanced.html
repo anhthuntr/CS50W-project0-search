@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div>
+            <div class="navbar">
+                <img class="navbar-left" height="25px" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+                <a class="navbar-pad" href="index.html">Advanced Search</a>
+                <a class="navbar-pad" href="image.html">Image Search</a>
+            </div>
+            <div class="ad-bar">Advanced Search</div>
+            <div style="border-bottom: 0.5px solid #bebebe;margin-top:-20px"></div>
+        </div>
+        <div class="ad-main">Find pages with...</div>
+        <form action="https://google.com/search">
+            <div class="ad-body">
+                <p>all these words: </p>
+                <div class="ad-fieldinput">
+                    <input class="ad-textinput" type="text" name="as_q">
+                </div>
+                <p>this exact word or phrase:</p>
+                <div class="ad-fieldinput">
+                    <input class="ad-textinput" type="text" name="as_epq">
+                </div>
+                <p>any of these words:</p>
+                <div class="ad-fieldinput">
+                    <input class="ad-textinput" type="text" name="as_oq">
+                </div>
+                <p>none of these words:</p>
+                <div class="ad-fieldinput">
+                    <input class="ad-textinput" type="text" name="as_eq">
+                </div>
+                <p>numbers ranging from:</p>
+                <div class="ad-fieldinput">
+                    <div style="display:table;width:100%"> 
+                        <div style="display:table-cell;padding-right:16px"> 
+                            <input class="ad-textinput" style="width:150px" name="as_nlo" type="text"> </div> 
+                            <div style="display:table-cell;width:40px;padding-right:12px;padding-left:6px;text-align:center;font-size:13px;color:#202124"> to </div> 
+                            <div style="display:table-cell;padding-right:16px"> 
+                                <input class="ad-textinput" style="width:150px" name="as_nhi" type="text"> </div> 
+                            </div>
+                    </div>
+            </div>
+        </form>
+    </body>
+</html>

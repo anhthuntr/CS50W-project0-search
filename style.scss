@@ -1,0 +1,131 @@
+$primary-color: #202124;
+$border-color: #dfe1e5;
+$button-color: #f8f9fa;
+$text-button-color: #3c4043;
+$highlight-color: #b9b9b9;
+$secondary-color: #d93025;
+
+$button-hover: ' .searchbutton:hover', '.bar:hover';
+
+body {
+    font-family: Arial, san-serif;
+    color: $primary-color;
+  }
+
+a:link { text-decoration: none;}
+a:visited { color: $primary-color }
+a:hover { text-decoration: underline;}
+a:active { color: $primary-color}
+p {
+  padding: 7px;
+}
+
+  .center-align {
+    margin-top: 150px;
+  }
+  
+  .img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+      width: auto;
+      margin-bottom: 20px;
+  }
+
+  .navbar {
+    text-align: right;
+    font-size: 14px;
+    align-items: center;
+    color: $primary-color;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .navbar-pad {
+    padding-left: 13px;
+    padding-right: 10px;
+  }
+
+  .navbar-left {
+    float: left;
+    margin-left: 15px;
+  }
+
+  .bar{
+    margin:0 auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid $border-color;
+  }
+  
+  .searchbar {
+    height:45px;
+    border:none;
+    width:500px;
+    font-size:16px;
+    outline: none;
+  }
+
+  .searchbutton {
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    border-radius: 4px;
+    color: $text-button-color;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 8px 16px;
+  }
+
+  .mirror {
+    display: flex;
+    color: #9aa0a6;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    bottom: 33px;
+    right: 265px;
+  }
+
+  .ad-bar {
+    color: $secondary-color;
+    margin: 25px 35px;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .ad-main {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 45px 0 10px 45px;
+  }
+
+  .ad-body {
+    font-size: 13px;
+    margin: 0 38px;
+    display: table-cell;
+    float: left;
+    vertical-align: middle;
+  }
+
+  .ad-textinput {
+    border: 1px solid $border-color;
+    border-top: 2px solid $border-color ;
+    font-size: 13px;
+    height: 25px;
+    width: 350px;
+  }
+
+  .ad-fieldinput {
+    float: left;
+    margin: -43px 200px;
+    min-height: 41px;
+    vertical-align: middle;
+  }
+
+  #{$button-hover} {
+    box-shadow: 0 0 3px 0px $highlight-color;
+	  outline: none;
+  }
